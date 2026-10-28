@@ -1,0 +1,10 @@
+usage: launch.py [-h] [--db DB] {enqueue,work,list,show,cancel} ...
+
+QueueKit � trabajos persistentes en tu equipo
+
+positional arguments:
+  {enqueue,work,list,show,cancel}
+
+options:
+  -h, --help            show this help message and exit
+  --db DB

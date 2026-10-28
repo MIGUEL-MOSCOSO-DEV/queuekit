@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "queuekit"
+version = "1.0.0"
+description = "A durable SQLite job queue with leases, retries, priorities and bounded worker concurrency."
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Miguel Moscoso", email = "miguelmoscoso.devperu@gmail.com"}]
+dependencies = []
+
+[project.scripts]
+queuekit = "queuekit.cli:main"
+
+[project.urls]
+Repository = "https://github.com/MIGUEL-MOSCOSO-DEV/queuekit"
+Issues = "https://github.com/MIGUEL-MOSCOSO-DEV/queuekit/issues"
+
+[tool.setuptools.packages.find]
+include = ["queuekit*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
